@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #fafaf9;
+}
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20% 3%;
+}
+.container {
+  width: 45%;
+}
+.first-star {
+  background-color: #f5c044;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reviewers {
+  font-size: 36px;
+}
+.p-review {
+  font-size: 20px;
+  margin: 30px 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.list > li {
+  font-size: 14px;
+}
+
+li {
+  position: relative;
+  padding-left: 30px; /* Adjust padding to make space for the tick mark */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+li::before {
+  content: "\2714"; /* Unicode for check mark */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #28a745; /* Green background color */
+  color: white; /* White tick mark */
+  width: 20px; /* Width of the tick mark container */
+  height: 20px; /* Height of the tick mark container */
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Adjust the size of the tick mark */
+}
+.card {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px 30px 20px 25px;
+  width: 320px;
+}
+.flex-right {
+  display: flex;
+  justify-content: end;
+}
+.flex-left {
+  display: flex;
+  justify-content: start;
+}
+.google-container p {
+  font-size: 16px;
+}
+.social-ratings {
+  display: flex;
+  align-items: center;
+}
+.img-socials {
+  width: 100px;
+  margin-right: 20px;
+}
+.mb {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 640px) {
+  .testimonial-container {
+    flex-direction: column;
+    padding: 100px 20px 0;
+  }
+  .container {
+    width: 100%;
+  }
+  .flex-right {
+    margin-top: 50px;
+  }
+}
